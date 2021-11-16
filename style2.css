@@ -1,0 +1,43 @@
+body, html {
+  margin: 0;
+}
+div {
+  background-color: rgb(1, 219, 1);
+  width: 100px;
+  height: 100px;
+
+  transform: translate(0);
+
+  animation-name: good;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes good {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(50vw) translateX(-100px);
+  }
+  20% {
+    transform: translateX(50vw) translateX(-100px) translateY(100vh) translateY(-100px);
+  }
+  30% {
+    transform: translateX(100vw) translateX(-100px) translateY(100vh) translateY(-100px);
+  }
+  40% {
+    transform: translateX(100vw) translateX(-100px) translateY(0);
+  }
+  50% {
+    transform: translateX(50vw) translateX(-100px);
+  }
+  70% {
+    transform: translateX(50vw) translateX(-100px) translateY(100vh) translateY(-100px);
+  }
+  90% {
+    transform: translateX(0) translateY(100vh) translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
